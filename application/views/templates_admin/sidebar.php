@@ -97,9 +97,6 @@
               </div>
             </li>
 
-          
-            
-
             <div class="topbar-divider d-none d-sm-block"></div>
 
             <ul class="na navbar-nav navbar-right">
@@ -112,7 +109,7 @@
                     <?php } ?>
 
                 </ul>
-            </div>
+            
           </ul>
 
         </nav>
