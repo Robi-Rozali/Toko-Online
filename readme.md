@@ -2,4 +2,4 @@
 
 ## Tugas
 
-membuat toko online
+membuat toko online menggunakan Codeigniter 3
