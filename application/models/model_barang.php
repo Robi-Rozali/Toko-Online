@@ -1,6 +1,12 @@
 <?php
 
 class Model_barang extends CI_Model{
+
+    public function pencarian($id){
+        $this->db->where('nama_brg',$id);
+        return $this->db->get('tb_barang')->result();
+    }
+
     Public function tampil_data(){
         return $this->db->get('tb_barang');
     }
