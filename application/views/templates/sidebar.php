@@ -1,3 +1,10 @@
+<?php
+$uri1 = $this->uri->segment(1);
+$uri2 = $this->uri->segment(2);
+$uri3 = $this->uri->segment(3);
+?>
+
+
 <body id="page-top">
 
   <!-- Page Wrapper -->
@@ -18,8 +25,8 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="<?php echo base_url('welcome/index') ?>">
+      <li class="nav-item <?= ($uri1 == '') ? 'active' : ''?>">
+        <a class="nav-link" href="<?php echo base_url() ?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -35,27 +42,27 @@
       
 
       <!-- Nav Item - Tables -->
-      <li class="nav-item">
+      <li class="nav-item <?= ($uri2 == 'elektronik') ? 'active' : ''?>">
         <a class="nav-link" href="<?php echo base_url('kategori/elektronik') ?>">
           <i class="fas fa-fw fa-tv"></i>
           <span>Electronik</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?= ($uri2 == 'pakaian_pria') ? 'active' : ''?>">
         <a class="nav-link" href="<?php echo base_url('kategori/pakaian_pria') ?>">
           <i class="fas fa-fw fa-tshirt"></i>
           <span>Pakaian Pria</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?= ($uri2 == 'pakaian_wanita') ? 'active' : ''?>">
         <a class="nav-link" href="<?php echo base_url('kategori/pakaian_wanita') ?>">
           <i class="fas fa-fw fa-tshirt"></i>
           <span>Pakaian Wanita</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?= ($uri2 == 'pakaian_anak') ? 'active' : ''?>">
         <a class="nav-link" href="<?php echo base_url('kategori/pakaian_anak') ?>">
           <i class="fas fa-fw fa-tshirt"></i>
           <span>Pakaian anak anak</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?= ($uri2 == 'peralatan_olahraga') ? 'active' : ''?>">
         <a class="nav-link" href="<?php echo base_url('kategori/peralatan_olahraga') ?>">
           <i class="fas fa-fw fa-futbol"></i>
           <span>Peralatan Olahraga</span></a>
