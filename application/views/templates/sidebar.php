@@ -14,7 +14,7 @@ $uri3 = $this->uri->segment(3);
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('dashboard/index') ?>">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url() ?>">
         <div class="sidebar-brand-icon ">
         <i class="fas fa-store"></i>
         </div>
