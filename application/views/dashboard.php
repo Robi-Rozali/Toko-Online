@@ -27,10 +27,10 @@
     <div class="row text-center mt-4">
         <?php foreach ($barang as $brg) : ?>
             <div class="col-md-3">
-            <div class="card mb-2 w-100 zoom">
-                <img src="<?php echo base_url().'/uploads/'.$brg->gambar ?> "class="card-img-top " alt="..." style="width:100%;height:200px">
+            <div class="card mb-2 w-100">
+                <img src="<?php echo base_url().'/uploads/'.$brg->gambar ?> "class="card-img-top" alt="..." style="width:100%;height:200px">
                 <div class="card-body">
-                    <h5 class="card-title mb-1"><?php echo $brg->nama_brg ?></h5> 
+                    <h5 class="card-title mb-1"><?php echo $brg->nama_brg ?></h5>
                     <small><?php echo $brg->keterangan ?></small><br>
                     <span class="badge badge-success mb-3">Rp. <?php echo number_format($brg->harga, 0,',','.') ?></span>
                     <?php echo anchor('dashboard/tambah_ke_keranjang/'.$brg->id_brg, '<div class="btn btn-sm btn-primary">Tambah Keranjang</div>') ?>
