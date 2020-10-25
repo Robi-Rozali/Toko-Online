@@ -18,7 +18,7 @@ $uri3 = $this->uri->segment(3);
         <div class="sidebar-brand-icon ">
         <i class="fas fa-store"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Toko Online</div>
+        <div class="sidebar-brand-text mx-3">Toko Online 007</div>
       </a>
 
       <!-- Divider -->
